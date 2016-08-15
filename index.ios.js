@@ -8,25 +8,96 @@ import React, { Component } from 'react';
 import {
   AppRegistry,
   StyleSheet,
+  ScrollView,
   Text,
   View
 } from 'react-native';
 
 class testRN extends Component {
+
+    scrollviewDidScroll(scrollView) {
+        console.log(scrollView);
+    }
   render() {
     return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Welcome to React Native!
-        </Text>
-        <Text style={styles.instructions}>
-          To get started, edit index.ios.js
-        </Text>
-        <Text style={styles.instructions}>
-          Press Cmd+R to reload,{'\n'}
-          Cmd+D or shake for dev menu
-        </Text>
-      </View>
+        <ScrollView onScroll={() => this.scrollviewDidScroll(this)}>
+            <Text>
+                const styles = StyleSheet.createconst styles = StyleSheet
+                .createconst styles = StyleSheet.create
+            </Text>
+            <Text>
+                const styles = StyleSheet.createconst styles = StyleSheet
+                .createconst styles = StyleSheet.create
+            </Text>
+            <Text>
+                const styles = StyleSheet.createconst styles = StyleSheet
+                .createconst styles = StyleSheet.create
+            </Text>
+            <Text>
+                const styles = StyleSheet.createconst styles = StyleSheet
+                .createconst styles = StyleSheet.create
+            </Text>
+            <Text>
+                const styles = StyleSheet.createconst styles = StyleSheet
+                .createconst styles = StyleSheet.create
+            </Text>
+            <Text>
+                const styles = StyleSheet.createconst styles = StyleSheet
+                .createconst styles = StyleSheet.create
+            </Text>
+            <Text>
+                const styles = StyleSheet.createconst styles = StyleSheet
+                .createconst styles = StyleSheet.create
+            </Text>
+            <Text>
+                const styles = StyleSheet.createconst styles = StyleSheet
+                .createconst styles = StyleSheet.create
+            </Text>
+            <Text>
+                const styles = StyleSheet.createconst styles = StyleSheet
+                .createconst styles = StyleSheet.create
+            </Text>
+            <Text>
+                const styles = StyleSheet.createconst styles = StyleSheet
+                .createconst styles = StyleSheet.create
+            </Text>
+            <Text>
+                const styles = StyleSheet.createconst styles = StyleSheet
+                .createconst styles = StyleSheet.create
+            </Text>
+            <Text>
+                const styles = StyleSheet.createconst styles = StyleSheet
+                .createconst styles = StyleSheet.create
+            </Text>
+            <Text>
+                const styles = StyleSheet.createconst styles = StyleSheet
+                .createconst styles = StyleSheet.create
+            </Text>
+            <Text>
+                const styles = StyleSheet.createconst styles = StyleSheet
+                .createconst styles = StyleSheet.create
+            </Text>
+            <Text>
+                const styles = StyleSheet.createconst styles = StyleSheet
+                .createconst styles = StyleSheet.create
+            </Text>
+            <Text>
+                const styles = StyleSheet.createconst styles = StyleSheet
+                .createconst styles = StyleSheet.create
+            </Text>
+            <Text>
+                const styles = StyleSheet.createconst styles = StyleSheet
+                .createconst styles = StyleSheet.create
+            </Text>
+            <Text>
+                const styles = StyleSheet.createconst styles = StyleSheet
+                .createconst styles = StyleSheet.create
+            </Text>
+            <Text>
+                const styles = StyleSheet.createconst styles = StyleSheet
+                .createconst styles = StyleSheet.create
+            </Text>
+        </ScrollView>
     );
   }
 }
@@ -34,20 +105,11 @@ class testRN extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
+    justifyContent: 'flex-end',
     alignItems: 'center',
-    backgroundColor: '#F5FCFF',
+    backgroundColor: 'white',
   },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
+
 });
 
 AppRegistry.registerComponent('testRN', () => testRN);
